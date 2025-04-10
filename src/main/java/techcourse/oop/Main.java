@@ -22,7 +22,7 @@ public class Main {
         }
 
         Cart cart = new Cart(orderedItems);
-        int totalPrice = cart.getTotalPrice();
-        System.out.println("총 금액: " + totalPrice);
+        OrderSystem orderSystem = new OrderSystem(cart);
+        System.out.println("총 금액: " + orderSystem.getTotalPrice());
     }
 }

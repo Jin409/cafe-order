@@ -9,14 +9,10 @@ public class Cart {
         this.orderedOrderedItems = orderedOrderedItems;
     }
 
-    public int getTotalPrice() {
+    public int calculateTotalPrice() {
         int totalPrice = 0;
         for (OrderedItem item : orderedOrderedItems) {
             totalPrice += item.getTotalPrice();
-        }
-
-        if (countTotalQuantity() > 5) {
-            return (int) (totalPrice * 0.9);
         }
 
         return totalPrice;
@@ -28,5 +24,9 @@ public class Cart {
             totalQuantity += item.getQuantity();
         }
         return totalQuantity;
+    }
+
+    public List<OrderedItem> getOrderedOrderedItems() {
+        return orderedOrderedItems;
     }
 }
