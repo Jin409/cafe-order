@@ -8,7 +8,8 @@ public class OrderSystem {
 
     public OrderSystem(Cart cart) {
         this.cart = cart;
-        this.discountPromotions = List.of(new AmericanoDiscountPolicy(cart), new QuantityDiscountPromotion(cart));
+        this.discountPromotions = List.of(new AmericanoDiscountPolicy(cart), new QuantityDiscountPromotion(cart),
+                new CoupleDiscountPromotion(cart));
     }
 
     public int getTotalPrice() {

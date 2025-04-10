@@ -2,7 +2,7 @@ package techcourse.oop;
 
 public class AmericanoDiscountPolicy implements DiscountPromotion {
 
-    private static final int AMERICANO_DISCOUNT_PRICE = 300;
+    private static final int DISCOUNT_PRICE = 300;
     private final Cart cart;
 
     public AmericanoDiscountPolicy(Cart cart) {
@@ -20,7 +20,7 @@ public class AmericanoDiscountPolicy implements DiscountPromotion {
         int discountedPrice = 0;
         for (OrderedItem item : cart.getOrderedOrderedItems()) {
             if (item.getMenu().equals(Menu.AMERICANO)) {
-                discountedPrice += AMERICANO_DISCOUNT_PRICE * item.getQuantity();
+                discountedPrice += DISCOUNT_PRICE * item.getQuantity();
             }
         }
         return totalPrice - discountedPrice;

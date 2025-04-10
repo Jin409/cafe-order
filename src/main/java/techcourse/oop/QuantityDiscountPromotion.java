@@ -3,6 +3,7 @@ package techcourse.oop;
 public class QuantityDiscountPromotion implements DiscountPromotion {
 
     private static final int APPLICABLE_STANDARD_QUANTITY = 5;
+    public static final double DISCOUNT_RATE = 0.9;
     private final Cart cart;
 
     public QuantityDiscountPromotion(Cart cart) {
@@ -16,6 +17,6 @@ public class QuantityDiscountPromotion implements DiscountPromotion {
 
     @Override
     public int calculateTotalPrice(int totalPrice) {
-        return (int) (totalPrice * 0.9);
+        return (int) (totalPrice * DISCOUNT_RATE);
     }
 }
