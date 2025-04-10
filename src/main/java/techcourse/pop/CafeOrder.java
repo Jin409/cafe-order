@@ -1,4 +1,4 @@
-package techcourse;
+package techcourse.pop;
 
 public class CafeOrder {
     public static int calculateTotalPrice(String[] items, int[] quantities) {
