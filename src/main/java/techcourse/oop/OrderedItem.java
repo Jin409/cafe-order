@@ -9,6 +9,10 @@ public class OrderedItem {
         this.quantity = quantity;
     }
 
+    public int getQuantity() {
+        return quantity;
+    }
+
     public int getTotalPrice() {
         return menu.getPrice() * quantity;
     }
