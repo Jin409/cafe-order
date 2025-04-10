@@ -3,7 +3,7 @@ package techcourse.oop;
 import java.util.Arrays;
 
 public enum Menu {
-    AMERICANO("아메리카노", 1_200),
+    AMERICANO("아메리카노", 1_500),
     LATTE("라떼", 2_000),
     MOCHA("모카", 2_500),
     CROISSANT("크로와상", 3_000);
